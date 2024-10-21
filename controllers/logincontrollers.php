@@ -4,9 +4,12 @@ $erreur = "";
 if (isset($_POST["register"])) {
 
     extract($_POST);
-    $motdpasse = password_hash($motdpasse, PASSWORD_DEFAULT,["cost"=>12]);
-    if (creeruncompte($prenom,$nom, $adresse,$tel,$email,$CNI,$motdpasse,"client")); {
-        header("Location:?page=login");
+
+    // on va hacher le mot de passe 
+    $motdepasse = password_hash($motdpasse, PASSWORD_DEFAULT, ["cost" => 12]);
+    if (creerUnCompte($prenom, $nom, $adresse, $tel, $CNI, $email, $motdepasse, "client")) {
+        header("location: ?page=login");
+        exit();
     }
 }
 
@@ -15,17 +18,20 @@ if (isset($_POST["connecter"])) {
     extract($_POST);
     $user=SeConnecter($email);
 
-    die("bien");
     if ($user) {
-        if(password_verify($motdpasse, $user->motdpasse)){
-            $_SESSION["user"] = $user;
-        }else{
-            $erreur = "Email ou mot d passe incorrecte";
+        $_SESSION["user"] = $user;
+        if (estAdmin() || estEmploye()) {
+            header("Location: ?page=dashboard");
+            exit();
+        } else {
+            header("Location: ?page=profil");
+            exit();
         }
-    }else{
-        $erreur = "Email ou mot d passe incorrecte";
+        supprimerLesDonneesDeLInput();
+    } else {
+        $erreurs = "Email ou mot de passe incorrect";
+        enregistrerLesDonnesDeLInput();
     }
-   
 }
 
 require_once("includes/entete.php"); 

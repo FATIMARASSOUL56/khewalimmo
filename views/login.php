@@ -48,11 +48,7 @@
                         <div class="col-md-12 col-xs-12 login-blocks">
                             <h2>connexion : </h2> 
                             <?php if($erreur): ?>
-                                <div class="alert alert-danger alert-dismissible fade show" 
-                                role="alert">
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"></button>
-                                <strong><?=$erreur?></strong>
-                                </div>
+                                <div class="alert alert-danger"><?=$erreur?></div>
 
                                 <?php endif;?>
                             <form action="" method="post">
