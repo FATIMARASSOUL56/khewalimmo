@@ -83,17 +83,30 @@
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse yamm" id="navigation">
-                    <div class="button navbar-right">
-                        <a href="?page=login" class="navbar-btn nav-button wow bounceInRight login">connexion</a>
-                        <button class="navbar-btn nav-button wow fadeInRight" onclick=" window.open('submit-property.html')" data-wow-delay="0.48s">Soumettre</button>
-                    </div>
+                    
                     <ul class="main-nav nav navbar-nav navbar-right">
                         <li class="wow fadeInDown" data-wow-delay="0.2s"><a class="" href="?page=accueil">Accueil</a></li>
 
                         <li class="wow fadeInDown" data-wow-delay="0.2s"><a class="" href="?page=chambre">Chambres</a></li>
                         <li class="wow fadeInDown" data-wow-delay="0.3s"><a class="" href="property.html">terrain</a></li>
                         
+                        <?php if(isset($_SESSION["user"])): ?>
+                            <li class="dropdown ymm-sw" data-wow-delay="0.1s">
+                                <a href="index.html" class="dropdown-toggle active" data-toggle="dropdown" data-hover="dropdown" data-delay="200"><?= $_SESSION["user"]->prenom ?> <b class="caret"></b></a>
+                                <ul class="dropdown-menu navbar-nav">
+                                    <li>
+                                        <a href="?page=profil">Profil</a>
+                                    </li>
+                                    <li>
+                                        <a href="?logout">Deconnexion</a>
+                                    </li>
 
+                                </ul>
+                        </li>
+                        <?php else: ?>
+                        <li class="wow fadeInDown" data-wow-delay="0.3s"><a class="" href="?page=login">connexion</a></li>
+
+                        <?php endif; ?>
                         
                     </ul>
                 </div><!-- /.navbar-collapse -->
