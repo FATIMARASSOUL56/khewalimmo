@@ -3,8 +3,8 @@
 <?php 
 
 session_start();
-require_once("includes/mesFonctions.php");
 require_once("models/database.php");
+require_once("includes/mesFonctions.php");
 
         if (isset($_GET["page"])) {
             switch ($_GET["page"]) {
@@ -23,14 +23,14 @@ require_once("models/database.php");
                 case 'chambreAdmin':
                     require_once("controllers/chambreAdminController.php");
                     break;
-                case 'blogAdmin':
-                    require_once("controllers/blogAdminController.php");
+                case 'terrainAdmin':
+                    require_once("controllers/terrainAdminController.php");
                     break;
-                case 'blog':
-                    require_once("controllers/blogController.php");
+                case 'terrain':
+                    require_once("controllers/terrainController.php");
                     break;
-                case 'blogDetail':
-                    require_once("controllers/blogDetailController.php");
+                case 'terrainDetail':
+                    require_once("controllers/terrainDetailController.php");
                     break;
                 case 'reservationAdmin':
                     require_once("controllers/reservationAdminController.php");

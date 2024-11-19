@@ -1,513 +1,314 @@
 
-<div class="slider-area">
-            <div class="slider">
-                <div id="bg-slider" class="owl-carousel owl-theme">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
 
-                    <div class="item"><img src="assets/img/slide1/slider-image-1.jpg" alt="GTA V"></div>
-                    <div class="item"><img src="assets/img/slide1/slider-image-2.jpg" alt="The Last of us"></div>
-                    <div class="item"><img src="assets/img/slide1/slider-image-1.jpg" alt="GTA V"></div>
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
-                </div>
+        <div class="carousel-item active">
+          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+          <div class="carousel-container">
+            <div>
+              <p>Doral, Florida</p>
+              <h2><span>204</span> Olive Road Two</h2>
+              <a href="property-single.html" class="btn-get-started">rent | $ 12.000</a>
             </div>
-            <div class="slider-content">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
-                        <h2>property Searching Just Got So Easy</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deserunt deleniti, ullam commodi sit ipsam laboriosam velit adipisci quibusdam aliquam teneturo!</p>
-                        <div class="search-form wow pulse" data-wow-delay="0.8s">
+          </div>
+        </div><!-- End Carousel Item -->
 
-                            <form action="" class=" form-inline">
-                                <button class="btn  toggle-btn" type="button"><i class="fa fa-bars"></i></button>
-
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Key word">
-                                </div>
-                                <div class="form-group">                                   
-                                    <select id="lunchBegins" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Select your city">
-
-                                        <option>New york, CA</option>
-                                        <option>Paris</option>
-                                        <option>Casablanca</option>
-                                        <option>Tokyo</option>
-                                        <option>Marraekch</option>
-                                        <option>kyoto , shibua</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">                                     
-                                    <select id="basic" class="selectpicker show-tick form-control">
-                                        <option> -Status- </option>
-                                        <option>Rent </option>
-                                        <option>Boy</option>
-                                        <option>used</option>  
-
-                                    </select>
-                                </div>
-                                <button class="btn search-btn" type="submit"><i class="fa fa-search"></i></button>
-
-                                <div style="display: none;" class="search-toggle">
-
-                                    <div class="search-row">   
-
-                                        <div class="form-group mar-r-20">
-                                            <label for="price-range">Price range ($):</label>
-                                            <input type="text" class="span2" value="" data-slider-min="0" 
-                                                   data-slider-max="600" data-slider-step="5" 
-                                                   data-slider-value="[0,450]" id="price-range" ><br />
-                                            <b class="pull-left color">2000$</b> 
-                                            <b class="pull-right color">100000$</b>
-                                        </div>
-                                        <!-- End of  -->  
-
-                                        <div class="form-group mar-l-20">
-                                            <label for="property-geo">Property geo (m2) :</label>
-                                            <input type="text" class="span2" value="" data-slider-min="0" 
-                                                   data-slider-max="600" data-slider-step="5" 
-                                                   data-slider-value="[50,450]" id="property-geo" ><br />
-                                            <b class="pull-left color">40m</b> 
-                                            <b class="pull-right color">12000m</b>
-                                        </div>
-                                        <!-- End of  --> 
-                                    </div>
-
-                                    <div class="search-row">
-
-                                        <div class="form-group mar-r-20">
-                                            <label for="price-range">Min baths :</label>
-                                            <input type="text" class="span2" value="" data-slider-min="0" 
-                                                   data-slider-max="600" data-slider-step="5" 
-                                                   data-slider-value="[250,450]" id="min-baths" ><br />
-                                            <b class="pull-left color">1</b> 
-                                            <b class="pull-right color">120</b>
-                                        </div>
-                                        <!-- End of  --> 
-
-                                        <div class="form-group mar-l-20">
-                                            <label for="property-geo">Min bed :</label>
-                                            <input type="text" class="span2" value="" data-slider-min="0" 
-                                                   data-slider-max="600" data-slider-step="5" 
-                                                   data-slider-value="[250,450]" id="min-bed" ><br />
-                                            <b class="pull-left color">1</b> 
-                                            <b class="pull-right color">120</b>
-                                        </div>
-                                        <!-- End of  --> 
-
-                                    </div>
-                                    <br>
-                                    <div class="search-row">  
-
-                                        <div class="form-group">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox"> Fire Place(3100)
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <!-- End of  -->  
-
-                                        <div class="form-group">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox"> Dual Sinks(500)
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <!-- End of  --> 
-
-                                        <div class="form-group">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox"> Hurricane Shutters(99)
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <!-- End of  --> 
-                                    </div>
-
-                                    <div class="search-row">  
-
-                                        <div class="form-group">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox"> Swimming Pool(1190)
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <!-- End of  -->  
-
-                                        <div class="form-group">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox"> 2 Stories(4600)
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <!-- End of  --> 
-
-                                        <div class="form-group">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox"> Emergency Exit(200)
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <!-- End of  --> 
-                                    </div>                                    
-
-                                    <div class="search-row">  
-
-                                        <div class="form-group">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox"> Laundry Room(10073)
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <!-- End of  -->  
-
-                                        <div class="form-group">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox"> Jog Path(1503)
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <!-- End of  --> 
-
-                                        <div class="form-group">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox"> 26' Ceilings(1200)
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <!-- End of  --> 
-                                        <br>
-                                        <hr>
-                                    </div>                             
-                                    <button class="btn search-btn prop-btm-sheaerch" type="submit"><i class="fa fa-search"></i></button>  
-                                </div>                    
-
-                            </form>
-                        </div>
-                    </div>
-                </div>
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
+          <div class="carousel-container">
+            <div>
+              <p>Doral, Florida</p>
+              <h2><span>247</span> Venda Road Five</h2>
+              <a href="property-single.html" class="btn-get-started">sale | $ 356.000</a>
             </div>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
+          <div class="carousel-container">
+            <div>
+              <p>Doral, Florida</p>
+              <h2><span>247</span> Vitra Road three</h2>
+              <a href="property-single.html" class="btn-get-started">rent | $ 3.000</a>
+            </div>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Services</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Nesciunt Mete</h3>
+              </a>
+              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Eosle Commodi</h3>
+              </a>
+              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Ledo Markt</h3>
+              </a>
+              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Asperiores Commodit</h3>
+              </a>
+              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <a href="service-details.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Velit Doloremque</h3>
+              </a>
+              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <a href="service-details.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Dolori Architecto</h3>
+              </a>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <a href="service-details.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
         </div>
 
-        <!-- property area -->
-        <div class="content-area home-area-1 recent-property" style="background-color: #FCFCFC; padding-bottom: 55px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1 col-sm-12 text-center page-title">
-                        <!-- /.feature title -->
-                        <h2>Top submitted property</h2>
-                        <p>Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium. Nullam sed arcu ultricies . </p>
-                    </div>
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Agents Section -->
+    <section id="agents" class="agents section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Chambres</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-5">
+        <?php foreach ($chambres as $key => $c) : ?>
+                <!-- les 4 dernieres chambres  -->
+            <?php if ($key < 3) : ?>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="member">
+                <div class="pic"><a href="?page=detailChambre&id=<?= $c->id ?>"><img src="images/<?= $c->image ?>" class="img-fluid" alt=""></a></div>
+                <div class="member-info">
+                  <h4><a href="?page=detailChambre&id=<?= $c->id ?>"><?= ucfirst($c->nom) ?></a></h4>
+                  <span><?= $c->prix ?> FCFA/jour</span>
+                  <div class="social">
+                    <?php if ($c->statut == 0) : ?>
+                        <a href="?page=reservation&id=<?= $c->id ?>" class="btn btn-success text-white">Reservez</a>
+                    <?php else : ?>
+                        <a href="#" class="text-danger">Occupée <br> jusqu'à <br> <?= date("d/m/Y", strtotime(dateFin($c->id))) ?></a>
+                    <?php endif; ?>
+                  </div>
                 </div>
+              </div>
+            </div><!-- End Team Member -->
+            <?php endif; ?>
+          <?php endforeach; ?>
 
-                <div class="row">
-                    <div class="proerty-th">
-                        <div class="col-sm-6 col-md-3 p0">
-                            <div class="box-two proerty-item">
-                                <div class="item-thumb">
-                                    <a href="property-1.html" ><img src="assets/img/demo/property-1.jpg"></a>
-                                </div>
-                                <div class="item-entry overflow">
-                                    <h5><a href="property-1.html" >Super nice villa </a></h5>
-                                    <div class="dot-hr"></div>
-                                    <span class="pull-left"><b>Area :</b> 120m </span>
-                                    <span class="proerty-price pull-right">$ 300,000</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-3 p0">
-                            <div class="box-two proerty-item">
-                                <div class="item-thumb">
-                                    <a href="property-2.html" ><img src="assets/img/demo/property-2.jpg"></a>
-                                </div>
-                                <div class="item-entry overflow">
-                                    <h5><a href="property-2.html" >Super nice villa </a></h5>
-                                    <div class="dot-hr"></div>
-                                    <span class="pull-left"><b>Area :</b> 120m </span>
-                                    <span class="proerty-price pull-right">$ 300,000</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-3 p0">
-                            <div class="box-two proerty-item">
-                                <div class="item-thumb">
-                                    <a href="property-3.html" ><img src="assets/img/demo/property-3.jpg"></a>
-
-                                </div>
-                                <div class="item-entry overflow">
-                                    <h5><a href="property-3.html" >Super nice villa </a></h5>
-                                    <div class="dot-hr"></div>
-                                    <span class="pull-left"><b>Area :</b> 120m </span>
-                                    <span class="proerty-price pull-right">$ 300,000</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-3 p0">
-                            <div class="box-two proerty-item">
-                                <div class="item-thumb">
-                                    <a href="property-1.html" ><img src="assets/img/demo/property-4.jpg"></a>
-
-                                </div>
-                                <div class="item-entry overflow">
-                                    <h5><a href="property-1.html" >Super nice villa </a></h5>
-                                    <div class="dot-hr"></div>
-                                    <span class="pull-left"><b>Area :</b> 120m </span>
-                                    <span class="proerty-price pull-right">$ 300,000</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-sm-6 col-md-3 p0">
-                            <div class="box-two proerty-item">
-                                <div class="item-thumb">
-                                    <a href="property-3.html" ><img src="assets/img/demo/property-2.jpg"></a>
-                                </div>
-                                <div class="item-entry overflow">
-                                    <h5><a href="property-3.html" >Super nice villa </a></h5>
-                                    <div class="dot-hr"></div>
-                                    <span class="pull-left"><b>Area :</b> 120m </span>
-                                    <span class="proerty-price pull-right">$ 300,000</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-3 p0">
-                            <div class="box-two proerty-item">
-                                <div class="item-thumb">
-                                    <a href="property-2.html" ><img src="assets/img/demo/property-4.jpg"></a>
-                                </div>
-                                <div class="item-entry overflow">
-                                    <h5><a href="property-2.html" >Super nice villa </a></h5>
-                                    <div class="dot-hr"></div>
-                                    <span class="pull-left"><b>Area :</b> 120m </span>
-                                    <span class="proerty-price pull-right">$ 300,000</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-3 p0">
-                            <div class="box-two proerty-item">
-                                <div class="item-thumb">
-                                    <a href="property-1.html" ><img src="assets/img/demo/property-3.jpg"></a>
-                                </div>
-                                <div class="item-entry overflow">
-                                    <h5><a href="property-1.html" >Super nice villa </a></h5>
-                                    <div class="dot-hr"></div>
-                                    <span class="pull-left"><b>Area :</b> 120m </span>
-                                    <span class="proerty-price pull-right">$ 300,000</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-3 p0">
-                            <div class="box-tree more-proerty text-center">
-                                <div class="item-tree-icon">
-                                    <i class="fa fa-th"></i>
-                                </div>
-                                <div class="more-entry overflow">
-                                    <h5><a href="property-1.html" >CAN'T DECIDE ? </a></h5>
-                                    <h5 class="tree-sub-ttl">Show all properties</h5>
-                                    <button class="btn border-btn more-black" value="All properties">All properties</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
         </div>
 
-        <!--Welcome area -->
-        <div class="Welcome-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 Welcome-entry  col-sm-12">
-                        <div class="col-md-5 col-md-offset-2 col-sm-6 col-xs-12">
-                            <div class="welcome_text wow fadeInLeft" data-wow-delay="0.3s" data-wow-offset="100">
-                                <div class="row">
-                                    <div class="col-md-10 col-md-offset-1 col-sm-12 text-center page-title">
-                                        <!-- /.feature title -->
-                                        <h2>GARO ESTATE </h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-sm-6 col-xs-12">
-                            <div  class="welcome_services wow fadeInRight" data-wow-delay="0.3s" data-wow-offset="100">
-                                <div class="row">
-                                    <div class="col-xs-6 m-padding">
-                                        <div class="welcome-estate">
-                                            <div class="welcome-icon">
-                                                <i class="pe-7s-home pe-4x"></i>
-                                            </div>
-                                            <h3>Any property</h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 m-padding">
-                                        <div class="welcome-estate">
-                                            <div class="welcome-icon">
-                                                <i class="pe-7s-users pe-4x"></i>
-                                            </div>
-                                            <h3>More Clients</h3>
-                                        </div>
-                                    </div>
+      </div>
 
+    </section><!-- /Agents Section -->
 
-                                    <div class="col-xs-12 text-center">
-                                        <i class="welcome-circle"></i>
-                                    </div>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
 
-                                    <div class="col-xs-6 m-padding">
-                                        <div class="welcome-estate">
-                                            <div class="welcome-icon">
-                                                <i class="pe-7s-notebook pe-4x"></i>
-                                            </div>
-                                            <h3>Easy to use</h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 m-padding">
-                                        <div class="welcome-estate">
-                                            <div class="welcome-icon">
-                                                <i class="pe-7s-help2 pe-4x"></i>
-                                            </div>
-                                            <h3>Any help </h3>
-                                        </div>
-                                    </div>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
-            </div>
+                <p>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
 
-        <!--TESTIMONIALS -->
-        <div class="testimonial-area recent-property" style="background-color: #FCFCFC; padding-bottom: 15px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1 col-sm-12 text-center page-title">
-                        <!-- /.feature title -->
-                        <h2>Our Customers Said  </h2> 
-                    </div>
-                </div>
+      </div>
 
-                <div class="row">
-                    <div class="row testimonial">
-                        <div class="col-md-12">
-                            <div id="testimonial-slider">
-                                <div class="item">
-                                    <div class="client-text">                                
-                                        <p>Nulla quis dapibus nisl. Suspendisse llam sed arcu ultried arcu ultricies !</p>
-                                        <h4><strong>Ohidul Islam, </strong><i>Web Designer</i></h4>
-                                    </div>
-                                    <div class="client-face wow fadeInRight" data-wow-delay=".9s"> 
-                                        <img src="assets/img/client-face1.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="client-text">                                
-                                        <p>Nulla quis dapibus nisl. Suspendisse llam sed arcu ultried arcu ultricies !</p>
-                                        <h4><strong>Ohidul Islam, </strong><i>Web Designer</i></h4>
-                                    </div>
-                                    <div class="client-face">
-                                        <img src="assets/img/client-face2.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="client-text">                                
-                                        <p>Nulla quis dapibus nisl. Suspendisse llam sed arcu ultried arcu ultricies !</p>
-                                        <h4><strong>Ohidul Islam, </strong><i>Web Designer</i></h4>
-                                    </div>
-                                    <div class="client-face">
-                                        <img src="assets/img/client-face1.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="client-text">                                
-                                        <p>Nulla quis dapibus nisl. Suspendisse llam sed arcu ultried arcu ultricies !</p>
-                                        <h4><strong>Ohidul Islam, </strong><i>Web Designer</i></h4>
-                                    </div>
-                                    <div class="client-face">
-                                        <img src="assets/img/client-face2.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    </section><!-- /Testimonials Section -->
 
-                </div>
-            </div>
-        </div>
-
-        <!-- Count area -->
-        <div class="count-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1 col-sm-12 text-center page-title">
-                        <!-- /.feature title -->
-                        <h2>You can trust Us </h2> 
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 col-xs-12 percent-blocks m-main" data-waypoint-scroll="true">
-                        <div class="row">
-                            <div class="col-sm-3 col-xs-6">
-                                <div class="count-item">
-                                    <div class="count-item-circle">
-                                        <span class="pe-7s-users"></span>
-                                    </div>
-                                    <div class="chart" data-percent="5000">
-                                        <h2 class="percent" id="counter">0</h2>
-                                        <h5>HAPPY CUSTOMER </h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3 col-xs-6">
-                                <div class="count-item">
-                                    <div class="count-item-circle">
-                                        <span class="pe-7s-home"></span>
-                                    </div>
-                                    <div class="chart" data-percent="12000">
-                                        <h2 class="percent" id="counter1">0</h2>
-                                        <h5>Properties in stock</h5>
-                                    </div>
-                                </div> 
-                            </div> 
-                            <div class="col-sm-3 col-xs-6">
-                                <div class="count-item">
-                                    <div class="count-item-circle">
-                                        <span class="pe-7s-flag"></span>
-                                    </div>
-                                    <div class="chart" data-percent="120">
-                                        <h2 class="percent" id="counter2">0</h2>
-                                        <h5>City registered </h5>
-                                    </div>
-                                </div> 
-                            </div> 
-                            <div class="col-sm-3 col-xs-6">
-                                <div class="count-item">
-                                    <div class="count-item-circle">
-                                        <span class="pe-7s-graph2"></span>
-                                    </div>
-                                    <div class="chart" data-percent="5000">
-                                        <h2 class="percent"  id="counter3">5000</h2>
-                                        <h5>DEALER BRANCHES</h5>
-                                    </div>
-                                </div> 
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  

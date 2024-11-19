@@ -1,20 +1,39 @@
 <!--================ Accomodation Area  =================-->
-<section class="accomodation_area section_gap">
+<section class="accomodation_area section_gap mt-5">
     <?php require_once("includes/getMessage.php"); ?>
     <div class="container row" id="profilAccordion">
-        <div class="col-md-3" style="margin-top:30px; border-radius:0px 30px 0px 0px; display:flex; flex-direction: column;row-gap: 20px; background:#F3F3F3;padding-bottom:40px;padding-top:20px;">
-            <a class="btn <?= !isset($_GET["type"])? 'btn-primary' : '' ?>  mb-5"  href="?page=profil" >
-                Mes informations
-            </a>
-            <a class="btn <?= isset($_GET["type"]) && $_GET["type"] == 'commande' ? 'btn-primary' : '' ?> mt-3"  href="?page=profil&type=commande" >
-                Mes Reservations
-            </a>
-            <a class="btn <?= isset($_GET["type"]) && $_GET["type"]=='password' ? 'btn-primary' : '' ?> mt-3" href="?page=profil&type=password">
-                Mot de passe
-            </a>
-            <a class="btn btn-danger mt-3" href="?logout">
-                Deconnexion
-            </a>
+        <div class="col-md-3">
+            <table class="table text-center table-bordered">
+                <tr>
+                    <td class=" <?= !isset($_GET["type"])? 'bg-success text-white' : '' ?>">
+                    <a class="text-dark"  href="?page=profil" >
+                        Mes informations
+                    </a>
+                    </td>
+                   </tr> <tr>
+                    <td class=" <?= isset($_GET["type"]) && $_GET["type"] == 'commande' ? 'bg-success text-white' : '' ?>">
+                    <a class="text-dark"  href="?page=profil&type=commande" >
+                        Mes Reservations
+                    </a>
+                    </td>
+                    </tr><tr>
+                    <td  <?= isset($_GET["type"]) && $_GET["type"]=='password' ? 'bg-success text-white' : '' ?>>
+                    <a class="text-dark" href="?page=profil&type=password">
+                        Mot de passe
+                    </a>
+                    </td>
+                    </tr><tr>
+                    <td>
+                    <a class="btn btn-outline-danger" href="?logout">
+                        Deconnexion
+                    </a>
+                    </td>
+                </tr>
+            </table>
+            
+            
+            
+            
 
         </div>
         <div class="col-md-9">
@@ -96,7 +115,7 @@
                                 <input type="password" name="motdepasseconfirm" required class="form-control">
                             </div>
                         </div>
-                        <button type="submit" name="editpassword" class="btn btn-warning">Modifier</button>
+                        <button type="submit" name="editpassword" class="btn mt-3 btn-warning">Modifier</button>
                     </form>
                 </div>
             </div>
@@ -132,7 +151,7 @@
                                 <input type="email" value="<?= $user->email ?>" name="email" required class="form-control">
                             </div>
                         </div>
-                        <button name="modifier" type="submit" class="btn btn-success">Modifier</button>
+                        <button name="modifier" type="submit" class="btn mt-3 btn-success">Modifier</button>
                     </form>
                 </div>
             </div>

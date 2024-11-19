@@ -80,7 +80,7 @@ function piedPagination($totalPages, $pageActuelle){
     echo '
             <ul class="container d-flex mt-5 justify-content-center pagination">';
             for($i = 1; $i <= $totalPages; $i++){
-                $classActive = $pageActuelle == $i ? "btn-warning" : "";
+                $classActive = $pageActuelle == $i ? "btn-success" : "";
                 echo '<li>
                         <a href="?page='.$_GET['page'].'&numero='.$i.'" class="btn '.$classActive.'">'.$i.'</a>
                     </li>';

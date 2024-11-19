@@ -3,17 +3,20 @@
 // connexion a la base de donnees 
 
 try {
-    $db = new PDO("mysql:host=localhost;dbname=kawsara", "root", "");
+    $db = new PDO("mysql:host=localhost;dbname=khewalimmo", "root", "");
 } catch (PDOException $th) {
     setMessage($th->getMessage(), "danger");
 }
 
-function ajouterBlog($titre, $description, $image){
+function ajouterTerrain($nom, $lieu, $superficie, $prix, $description, $image){
     global $db;
     try {
-        $q = $db->prepare("INSERT INTO blogs VALUES(null, :titre, :description, :image)");
+        $q = $db->prepare("INSERT INTO terrain VALUES(null, :nom, :lieu, :superficie, :prix, :description, :image)");
         return $q->execute([
-            "titre" => $titre,
+            "nom" => $nom,
+            "lieu" => $lieu,
+            "superficie" => $superficie,
+            "prix" => $prix,
             "description" => $description,
             "image" => $image
         ]);
@@ -22,10 +25,10 @@ function ajouterBlog($titre, $description, $image){
     }
 }
 
-function listeDesBlogs(){
+function listeDesTerrains(){
     global $db;
     try {
-        $q = $db->prepare("SELECT * FROM blogs ORDER BY id DESC");
+        $q = $db->prepare("SELECT * FROM terrain ORDER BY id DESC");
 
         $q->execute();
 
@@ -35,10 +38,10 @@ function listeDesBlogs(){
     }
 }
 
-function recupererUnBlog($id){
+function recupererUnTerrain($id){
     global $db;
     try {
-        $q = $db->prepare("SELECT * FROM blogs WHERE id =:id");
+        $q = $db->prepare("SELECT * FROM terrain WHERE id =:id");
 
         $q->execute(["id" => $id]);
 
@@ -48,14 +51,17 @@ function recupererUnBlog($id){
     }
 }
 
-function modifierUnBlog($id, $titre, $description, $image){
+function modifierUnTerrain($id, $nom, $lieu, $superficie, $prix, $description, $image){
     global $db;
     try {
-        $q = $db->prepare("UPDATE blogs 
-        SET titre =:titre, description =:description, image =:image
+        $q = $db->prepare("UPDATE terrain 
+        SET nom =:nom, lieu =:lieu,superficie =:superficie,prix =:prix, description =:description, image =:image
         WHERE id =:id");
         return $q->execute([
-            "titre" => $titre,
+            "nom" => $nom,
+            "lieu" => $lieu,
+            "superficie" => $superficie,
+            "prix" => $prix,
             "description" => $description,
             "image" => $image,
             "id" => $id
@@ -66,10 +72,10 @@ function modifierUnBlog($id, $titre, $description, $image){
     }
 }
 
-function supprimerUnBlog($id){
+function supprimerUnTerrain($id){
     global $db;
     try {
-        $q = $db->prepare("DELETE FROM blogs WHERE id =:id");
+        $q = $db->prepare("DELETE FROM terrain WHERE id =:id");
         return $q->execute(["id" => $id]);
     } catch (PDOException $th) {
         setMessage($th->getMessage(), "danger");
@@ -223,7 +229,7 @@ function recupererTousLesChambres()
 {
     global $db;
     try {
-        $q = $db->prepare("SELECT * FROM chambres WHERE statut = 0 ORDER BY id DESC");
+        $q = $db->prepare("SELECT * FROM chambres ORDER BY id DESC");
         $q->execute();
 
         return $q->fetchAll(PDO::FETCH_OBJ);
