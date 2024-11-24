@@ -24,7 +24,7 @@ if (isset($_POST["reserver"])) {
         setMessage("La date de départ ne peut pas être inférieur à la date d'entrée", "danger");
     }else{
 
-
+        $chambre_id = isset($chambre) ? $chambre->id : $chambre_id;
         $c = avoirUneChambre($chambre_id);
         if ($c) {
             $prix_total = intval($dd->diff($df)->format("%R%a")) * $c->prix;
