@@ -4,38 +4,21 @@
 
       <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
-        <div class="carousel-item active">
-          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+      <?php foreach ($chambres as $key => $c) : ?>
+                <!-- les 4 dernieres chambres  -->
+            <?php if ($key < 3) : ?>
+        <div id="<?= $c->id ?>" class="carousel-item <?= $key == 0 ?  'active' : '' ?> ">
+          <img src="images/<?= $c->image ?>" alt="">
           <div class="carousel-container">
             <div>
-              <p>Doral, Florida</p>
-              <h2><span>204</span> Olive Road Two</h2>
-              <a href="property-single.html" class="btn-get-started">rent | $ 12.000</a>
+              <p><?= number_format($c->prix, 0, ",", " ") ?> FCFA/jour</p>
+              <h2><span><?= $c->nom ?></span></h2>
+              <a href="?page=reservation&id=<?= $c->id ?>" class="btn-get-started">Réservez-vous</a>
             </div>
           </div>
         </div><!-- End Carousel Item -->
-
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
-          <div class="carousel-container">
-            <div>
-              <p>Doral, Florida</p>
-              <h2><span>247</span> Venda Road Five</h2>
-              <a href="property-single.html" class="btn-get-started">sale | $ 356.000</a>
-            </div>
-          </div>
-        </div><!-- End Carousel Item -->
-
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
-          <div class="carousel-container">
-            <div>
-              <p>Doral, Florida</p>
-              <h2><span>247</span> Vitra Road three</h2>
-              <a href="property-single.html" class="btn-get-started">rent | $ 3.000</a>
-            </div>
-          </div>
-        </div><!-- End Carousel Item -->
+        <?php endif; ?>
+        <?php endforeach; ?>
 
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
@@ -129,7 +112,7 @@
                 <div class="pic"><a href="?page=detailChambre&id=<?= $c->id ?>"><img src="images/<?= $c->image ?>" class="img-fluid" alt=""></a></div>
                 <div class="member-info">
                   <h4><a href="?page=detailChambre&id=<?= $c->id ?>"><?= ucfirst($c->nom) ?></a></h4>
-                  <span><?= $c->prix ?> FCFA/jour</span>
+                  <span><?= number_format($c->prix, 0, ",", " ") ?> FCFA/jour</span>
                   <div class="social">
                     <?php if ($c->statut == 0) : ?>
                         <a href="?page=reservation&id=<?= $c->id ?>" class="btn btn-success text-white">Reservez</a>
