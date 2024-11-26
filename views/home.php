@@ -138,7 +138,7 @@
         <div class="row gy-5">
         <?php foreach ($chambres as $key => $c) : ?>
                 <!-- les 4 dernieres chambres  -->
-            <?php if ($key < 3) : ?>
+            <?php if ($key < 6) : ?>
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
               <div class="member">
                 <div class="pic"><a href="?page=detailChambre&id=<?= $c->id ?>"><img src="images/<?= $c->image ?>" class="img-fluid" alt=""></a></div>

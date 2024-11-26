@@ -1,6 +1,6 @@
 <?php
 
-$data = pagination("chambres", 6);
+$data = pagination("chambres", 9);
 
 $chambres = $data[0];
 $totalPages = $data[1];

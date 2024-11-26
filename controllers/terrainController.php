@@ -1,6 +1,6 @@
 <?php
 
-$data = pagination("terrain", 6);
+$data = pagination("terrain", 9);
 
 $terrains = $data[0];
 $totalPages = $data[1];
