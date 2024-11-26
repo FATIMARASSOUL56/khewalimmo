@@ -1,6 +1,8 @@
 <?php
 
 $chambres = recupererTousLesChambres();
+$terrains = listeDesTerrains();
+
 
 require_once("includes/entete.php"); 
 

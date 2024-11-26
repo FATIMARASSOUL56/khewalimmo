@@ -19,7 +19,7 @@
                 <img src="images/<?= $t->image ?>" alt="" class="img-fluid">
                 <div class="card-body">
                     <span class="sale-rent"><?= number_format($t->prix, 0, ',', ' ')  ?> FCFA</span>
-                    <h3><a href="property-single.html" class="stretched-link"><?= $t->nom ?></a></h3>
+                    <h3><a href="?page=detailTerrain&id=<?= $t->id ?>" class="stretched-link"><?= $t->nom ?></a></h3>
                     <div class="card-content d-flex flex-column justify-content-center text-center">
                     <div class="row propery-info">
                         <div class="col">Superficie</div>

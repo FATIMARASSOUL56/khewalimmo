@@ -3,7 +3,7 @@
         <div class="container">
           <ol>
             <li><a href="?page=home">Accueil</a></li>
-            <li class="current">Détails chambre: <?= $c->nom ?></li>
+            <li class="current">Détails terrain: <?= $c->nom ?></li>
           </ol>
         </div>
       </nav>
@@ -69,14 +69,10 @@
               <h3>Détails</h3>
               <ul>
                 <li><strong>Prix:</strong> <?= $c->prix ?> F CFA</li>
-              </ul>
-              <div class="social">
-                <?php if ($c->statut == 0) : ?>
-                    <a href="?page=reservation&id=<?= $c->id ?>" class="btn btn-success text-white">Reservez</a>
-                <?php else : ?>
-                    <a href="#" class="text-danger">Occupée <br> jusqu'à <br> <?= date("d/m/Y", strtotime(dateFin($c->id))) ?></a>
-                <?php endif; ?>
-              </div>
+                <li><strong>Superficie:</strong> <?= number_format($c->superficie, 2, ',', ' ') ?>m<sup>2</sup></li>
+                <li><strong>Emplacement:</strong> <?= $c->lieu ?></li>
+            </ul>
+              
             </div>
           </div>
 
@@ -89,7 +85,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Chambres Similaires</h2>
+        <h2>Terrains Similaires</h2>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -100,17 +96,11 @@
             <?php if ($key < 3) : ?>
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
               <div class="member">
-                <div class="pic"><a href="?page=detailChambre&id=<?= $c->id ?>"><img src="images/<?= $c->image ?>" class="img-fluid" alt=""></a></div>
+                <div class="pic"><a href="?page=detailTerrain&id=<?= $c->id ?>"><img src="images/<?= $c->image ?>" class="img-fluid" alt=""></a></div>
                 <div class="member-info">
-                  <h4><a href="?page=detailChambre&id=<?= $c->id ?>"><?= ucfirst($c->nom) ?></a></h4>
+                  <h4><a href="?page=detailTerrain&id=<?= $c->id ?>"><?= ucfirst($c->nom) ?></a></h4>
                   <span><?= number_format($c->prix, 0, ",", " ") ?> FCFA/jour</span>
-                  <div class="social">
-                    <?php if ($c->statut == 0) : ?>
-                        <a href="?page=reservation&id=<?= $c->id ?>" class="btn btn-success text-white">Reservez</a>
-                    <?php else : ?>
-                        <a href="#" class="text-danger">Occupée <br> jusqu'à <br> <?= date("d/m/Y", strtotime(dateFin($c->id))) ?></a>
-                    <?php endif; ?>
-                  </div>
+                  
                 </div>
               </div>
             </div><!-- End Team Member -->

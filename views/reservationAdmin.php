@@ -1,9 +1,9 @@
 <section class="accomodation_area section_gap mt-5">
     <div class="container">
-        <div class="section_title row">
+        <div class="section_title row mb-2">
             <h2 class="title_color col-md-10">Liste des réservations</h2>
             <div class="col-md-2 text-end">
-            <a href="#" onclick="exporter('print')" class="btn btn-secondary"><i class="fa fa-print"></i>Exporter</a>
+            <!-- <a href="#" onclick="exporter('print')" class="btn btn-secondary"><i class="fa fa-print"></i>Exporter</a> -->
 
             </div>
         </div>
@@ -14,7 +14,6 @@
                     <tr>
                         <th>Reference</th>
                         <th>Prenom</th>
-                        <th>Nom</th>
                         <th>Telephone</th>
                         <th>Chambre</th>
                         <th>Date d'entrée</th>
@@ -29,7 +28,6 @@
                         <tr>
                             <td><?= $r->reference ?></td>
                             <td><?= $r->prenomclient ?></td>
-                            <td><?= $r->nomclient ?></td>
                             <td><?= $r->tel ?></td>
                             <td><?= $r->nomchambre ?></td>
                             <td><?= date("d/m/Y",strtotime($r->date_debut)) ?></td>

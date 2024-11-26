@@ -1,11 +1,11 @@
 <!--================ Accomodation Area  =================-->
 <section class="accomodation_area section_gap mt-5">
     <div class="container">
-        <div class="section_title row">
+        <div class="section_title row mb-2">
             <h2 class="title_color col-md-9">Liste des chambres</h2>
             <div class="col-md-3 text-end">
                 <a href="?page=chambreAdmin&type=add" class="btn btn-success"><i class="fa fa-plus"></i>Ajouter</a>
-                <a href="#" onclick="exporter('print')" class="btn btn-secondary"><i class="fa fa-print"></i>Exporter</a>
+                <!-- <a href="#" onclick="exporter('print')" class="btn btn-secondary"><i class="fa fa-print"></i>Exporter</a> -->
             </div>
         </div>
         <?php require_once("includes/getMessage.php"); ?>

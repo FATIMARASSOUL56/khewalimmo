@@ -76,6 +76,37 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <!-- Datatable -->
+  <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.colVis.min.js"></script>
+    
+    <script>  
+        let table = $('#myTable').DataTable({
+            language: {
+                info: 'Affichage de _PAGE_ sur _PAGES_',
+                infoEmpty: 'Aucun enregistrement disponible',
+                infoFiltered: '(filtré de _MAX_ enregistrements totaux)',
+                lengthMenu: 'Affichage de _MENU_  &nbsp;',
+                zeroRecords: 'Aucun résultat trouvé',
+                search: "Recherche :",
+                paginate: {
+                    next: "<h3>&raquo;</h3>",
+                    previous: "<h3>&laquo;</h3>",
+                },
+            },
+            dom: 'lBfrtip',
+            buttons: ['excel', 'pdf', {
+            extend: 'print',
+            text: 'Imprimer' // Renommer le bouton "Print" en "Imprimer"
+        }],
+            lengthMenu: [10, 20, 50,75, 100],// Options de sélection pour les éléments par page
+        });
+
+    </script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
@@ -111,6 +142,7 @@
     </script>
 
 <?php endif; ?>
+
 
 <script>
   function exporter(id){

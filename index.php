@@ -29,8 +29,8 @@ require_once("includes/mesFonctions.php");
                 case 'terrain':
                     require_once("controllers/terrainController.php");
                     break;
-                case 'terrainDetail':
-                    require_once("controllers/terrainDetailController.php");
+                case 'detailTerrain':
+                    require_once("controllers/detailTerrainController.php");
                     break;
                 case 'reservationAdmin':
                     require_once("controllers/reservationAdminController.php");

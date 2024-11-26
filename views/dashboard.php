@@ -4,31 +4,30 @@
                 <div class="row gy-4">
 
                     <div class="col-lg-4 col-md-6">
-                        <div class="stats-item d-flex align-items-center w-100 h-100">
-                            <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+                        <div class="stats-item d-flex align-items-center card w-100 h-100">
+                            
                             <div>
-                            <span data-purecounter-start="0" data-purecounter-end="<?= $nbreDeClients ?>" data-purecounter-duration="0" class="purecounter"><?= $nbreDeClients ?></span>
-                            <p>Happy Clients</p>
+                            <h1 data-purecounter-start="0" data-purecounter-end="<?= $nbreDeClients ?>" data-purecounter-duration="0" class="purecounter text-center"><?= $nbreDeClients ?></h1>
+                            <p><i class="bi bi-person color-blue flex-shrink-0"></i>Clients</p>
                             </div>
                         </div>
                     </div><!-- End Stats Item -->
 
                     <div class="col-lg-4 col-md-6">
-                    <div class="stats-item d-flex align-items-center w-100 h-100">
-                        <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
+                    <div class="stats-item card d-flex align-items-center w-100 h-100">
                         <div>
-                        <span data-purecounter-start="0" data-purecounter-end="<?= $recettesMensuelles ?>" data-purecounter-duration="0" class="purecounter"><?= $recettesMensuelles ?> FCFA</span>
-                        <p>Recettes Mensuelles</p>
+                        <h1 data-purecounter-start="0" data-purecounter-end="<?= $recettesMensuelles." FCFA" ?>" data-purecounter-duration="0" class="purecounter text-center"><?= $recettesMensuelles ?> FCFA</h1>
+                        <p><i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>Recettes Mensuelles</p>
                         </div>
                     </div>
                     </div><!-- End Stats Item -->
 
                     <div class="col-lg-4 col-md-6">
-                    <div class="stats-item d-flex align-items-center w-100 h-100">
-                        <i class="bi bi-headset color-green flex-shrink-0"></i>
+                    <div class="stats-item card d-flex align-items-center w-100 h-100">
+                        
                         <div>
-                        <span data-purecounter-start="0" data-purecounter-end="<?= $nombreChambre ?>" data-purecounter-duration="0" class="purecounter"><?= $nombreChambre ?></span>
-                        <p>Chambres</p>
+                        <h1 data-purecounter-start="0" data-purecounter-end="<?= $nombreChambre ?>" data-purecounter-duration="0" class="purecounter text-center"><?= $nombreChambre ?></h1>
+                        <p><i class="bi bi-headset color-green flex-shrink-0"></i>Chambres</p>
                         </div>
                     </div>
                     </div><!-- End Stats Item -->
